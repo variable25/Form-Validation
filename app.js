@@ -27,12 +27,12 @@ let validateEmail = () => {
         emailError.style.color = 'red'
         return false
     }
-    if (!email.match(/^[\w.+_]+@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*\.[A-Za-z]{2,}$/)) {
+    if (!email.match(/^[\w.+-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*\.[A-Za-z]{2,}$/)) {
         emailError.innerHTML = 'Not a valid email format'
         emailError.style.color = 'red'
         return false
     }
-    emailError.innerHTML = 'valid'
+    emailError.innerHTML = 'Valid'
     emailError.style.color = 'green'
     return true
 }
@@ -53,3 +53,20 @@ let validatePhone = () => {
     phoneError.style.color = 'green'
     return true
 }
+
+let validateSubmit = () => {
+    let nameCheck = validateName()
+    let emailCheck = validateEmail()
+    let phoneCheck = validatePhone()
+
+    if (nameCheck && emailCheck && phoneCheck) {
+        submitError.innerHTML = 'Successfully Submitted'
+        submitError.style.color = 'green'
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+    }
+    else{
+        submitError.innerHTML = 'Please enter the details'
+        submitError.style.color = 'red'
+    }
+}
+
