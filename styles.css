@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(163, 163, 163);
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(212, 211, 195);
+    font-size: 40px;
+}
+
+button{
+    padding: 12px;
+    width: 120px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    margin-top: 10%;
+    background-color: rgb(221, 209, 192);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+
+.form-card{
+    margin: 20% auto;
+    width: 500px;
+    height: 500px;
+    border-radius: 15px;
+    background-color: rgb(43, 40, 40);
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form-field{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.label-text{
+    color: aliceblue;
+    text-align: left;
+    font-size: 20px;
+}
+
+.form-input{
+    background-color: rgb(43, 40, 40);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: rgb(212, 211, 195);
+    width: 75%;
+    font-size: 20px;
+    background: transparent;
+    border-color: rgb(43, 40, 40);
+    font-family: 'Crimson Text', serif;
+}
+
+.form-input:focus{
+    outline: none;
+    border-width: 2px;
+    border-color: aliceblue;
+    transition: 0.5s;
+}
+
+span{
+    position: absolute;
+    top: 45px;
+    right: 75px;
+    left: 105px;
+    color: rgb(248, 50, 50);
+}
+
+#submit-error{
+    position: absolute;
+    top: 420px;
+    left: 81px;
+    margin-bottom: 20px;
+}
+
+
+
